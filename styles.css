@@ -1,0 +1,135 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('stellar-background.jpg') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #a256a2;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 20px;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.start {
+    font-size: 30px;
+    padding: 20px 40px;
+}
+
+
+.date-input {
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+}
+
+
+.image-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 40px; /* Larger font size for tablet */
+    }
+
+    .button {
+        font-size: 25px; /* Larger buttons for tablet */
+        padding: 15px 30px;
+    }
+
+    .date-input {
+        font-size: 25px; /* Larger input field for easier touch */
+        padding: 15px;
+    }
+
+    .image-container img {
+        max-width: 80%; /* Adjust image size for tablet view */
+    }
+}
+
+
+
+
+
+/* Mobile styles */
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 32px; /* Smaller font size for mobile */
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .button {
+        font-size: 18px; /* Smaller buttons for mobile */
+        padding: 12px 24px;
+        margin-top: 10px; /* Add space above buttons */
+    }
+
+    .start {
+        font-size: 22px; /* Slightly larger start button for visibility */
+        padding: 15px 30px;
+    }
+
+    .date-input {
+        font-size: 18px; /* Smaller input field for mobile */
+        padding: 12px;
+        margin-top: 10px;
+    }
+
+    .image-container {
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    .image-container img {
+        max-width: 100%; /* Full width images on mobile */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 15px;
+    }
+}
